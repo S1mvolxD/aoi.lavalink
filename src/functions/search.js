@@ -16,6 +16,7 @@ module.exports = async (d) => {
     if (!query) return d.aoiError.fnError(d, "custom", {}, `Please provide the title of the song you want to search.`);
     type = type?.toLowerCase()
         .replace('youtube', 'ytsearch')
+        .replace('yandexmusic', 'ymsearch')
         .replace('spotify', 'spsearch')
         .replace('soundcloud', 'scsearch')
         .replace('deezer', 'dzsearch')
