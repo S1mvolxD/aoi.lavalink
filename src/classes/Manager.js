@@ -20,6 +20,7 @@ exports.Manager = class Manager extends Shoukaku {
         options.debug = options.debug || false;
         options.searchEngine = options.searchEngine?.toLowerCase()
             .replace('youtube', 'ytsearch')
+            .replace('yandexmusic', 'ymsearch')
             .replace('spotify', 'spsearch')
             .replace('soundcloud', 'scsearch')
             .replace('deezer', 'dzsearch')
