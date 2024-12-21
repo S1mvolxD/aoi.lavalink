@@ -35,7 +35,7 @@ exports.Manager = class Manager extends Shoukaku {
             reconnectInterval: options.reconnectInterval || 5,
             reconnectTries: options.reconnectTries || 3,
             restTimeout: options.restTimeout || 60,
-            userAgent: options.userAgent || 'aoijs.lavalink',
+            userAgent: options.userAgent || 'aoi.lavalink',
             voiceConnectionTimeout: options.voiceConnectionTimeout || 15,
             structures: options.structures || {},
             nodeResolver: (nodes) => {
