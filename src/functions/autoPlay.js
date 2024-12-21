@@ -3,6 +3,7 @@ module.exports = async (d) => {
     let [value, type] = data.inside.splits;
     type = type?.toLowerCase()
         .replace('youtube', 'ytsearch')
+        .replace('yandexmusic', 'ymsearch')
         .replace('spotify', 'spsearch')
         .replace('soundcloud', 'scsearch')
         .replace('deezer', 'dzsearch')
