@@ -13,7 +13,6 @@ module.exports = async (d) => {
     type = type?.toLowerCase()
         .replace('youtube', 'ytsearch')
         .replace('vkmusic', 'vmsearch')
-        .replace('radio', 'rsearch')
         .replace('yandexmusic', 'ymsearch')
         .replace('spotify', 'spsearch')
         .replace('soundcloud', 'scsearch')
