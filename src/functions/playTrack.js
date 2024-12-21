@@ -12,7 +12,6 @@ module.exports = async (d) => {
     if (!type) type = d.client.music.searchEngine;
     type = type?.toLowerCase()
         .replace('youtube', 'ytsearch')
-        .replace('radio', 'rsearch')
         .replace('vkmusic', 'vmsearch')
         .replace('yandexmusic', 'ymsearch')
         .replace('spotify', 'spsearch')
