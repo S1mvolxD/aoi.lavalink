@@ -1,5 +1,5 @@
 {
-    "name": "aoijs.lavalink",
+    "name": "aoi.lavalink",
     "version": "4.0.0",
     "description": "A package for integrating Lavalink with Aoi.js to enable music streaming in Discord bots.",
     "type": "commonjs",
@@ -27,19 +27,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tyowk/aoijs.lavalink.git"
+        "url": "git+https://github.com/S1mvolxD/aoi.lavalink.git"
     },
-    "funding": [{
-        "type": "individual",
-        "url": "https://trakteer.id/tyowk"
-    },{
-        "type": "patreon",
-        "url": "https://www.patreon.com/tyowk_official"
-    }],
-    "bugs": {
-        "url": "https://github.com/tyowk/aoijs.lavalink/issues"
-    },
-    "homepage": "https://github.com/tyowk/aoijs.lavalink",
+    "homepage": "https://github.com/S1mvolxD/aoi.lavalink.git",
     "files": [
         "src",
         "README.md",
