@@ -1,4 +1,4 @@
-# aoijs.lavalink
+# aoi.lavalink
 
 A package for integrating Lavalink with Aoi.js to enable music streaming in Discord bots.
 
