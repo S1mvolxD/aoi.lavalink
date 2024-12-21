@@ -7,7 +7,7 @@ A package for integrating Lavalink with Aoi.js to enable music streaming in Disc
 ## Installation
 
 ```bash
-npm install aoijs.lavalink
+npm install git+https://github.com/S1mvolxD/aoi.lavalink.git
 ```
 ---
 
@@ -17,7 +17,7 @@ The setup is used to initialize the bot client and configure the Lavalink music 
 
 ```js
 const { AoiClient } = require('aoi.js');
-const { Manager } = require('aoijs.lavalink'); // Importing the MusicClient for handling Lavalink integration.
+const { Manager } = require('aoi.lavalink'); // Importing the MusicClient for handling Lavalink integration.
 
 const client = new AoiClient({ ... });
 
