@@ -15,7 +15,7 @@ module.exports = async (d) => {
         .replace('vkmusic', 'vmsearch')
         .replace('yandexmusic', 'ymsearch')
         .replace('spotify', 'spsearch')
-        .replace('youtubemusic', 'ytmsearch')
+        .replace('youtubemusic', 'ytmsearch');
 
     if (!d.member?.voice?.channel) return d.aoiError.fnError(d, "custom", {}, `You are not connected to any voice channels.`);
     const player = d.client.queue.get(d.guild.id);
