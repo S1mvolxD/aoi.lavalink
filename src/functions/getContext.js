@@ -1,15 +1,27 @@
-module.exports = async (d) => {
+module.exports = async (d) => d => {
             const data = d.util.aoiFunc(d);
             if (data.err) return d.client.returnCode(d, data);
+            const [option, msg = 'all'] = data.inside.splits;
 
-            const [value] = data.inside.splits;
-            const config = d.client.config;
+            const extractUrl = str => {
+                const matched = str.match(/<(https?:\/\/[^>]+)>/);
+                return matched ? matched[1] : null;
+            };
 
-            try {
-                let evaled = await eval(`config.${value}`);
-                if (typeof evaled === 'object') evaled = JSON.stringify(evaled);
-                data.result = evaled;
-            } catch {}
+            if (d.data.interaction) {
+                if (option == 'false') return d.client.returnCode(d, data);
+                data.result = d.data.interaction.options.get(option.addBrackets())?.value;
+            } else {
+                if (msg == 'false') return d.client.returnCode(d, data);
+                data.result = msg === 'all' ? d.args.join(' ') : d.args[Number(msg) - 1];
+            }
+
+            if (typeof data.result === 'string') {
+                const url = extractUrl(data.result);
+                if (url) {
+                    data.result = url;
+                }
+            }
 
             return {
                 code: d.util.setCode(data),
