@@ -15,9 +15,7 @@ module.exports = async (d) => {
         .replace('yandexmusic', 'ymsearch')
         .replace('spotify', 'spsearch')
         .replace('soundcloud', 'scsearch')
-        .replace('deezer', 'dzsearch')
         .replace('youtubemusic', 'ytmsearch')
-        .replace('applemusic', 'amsearch');
 
     const res = (d.data.tracks && (d.data.tracks?.query === query.addBrackets()))
         ? d.data.tracks
