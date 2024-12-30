@@ -1,4 +1,4 @@
-module.exports = async (d) => d => {
+module.exports = async (d) => {
             const data = d.util.aoiFunc(d);
             if (data.err) return d.client.returnCode(d, data);
             const [option, msg = 'all'] = data.inside.splits;
