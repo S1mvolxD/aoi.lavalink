@@ -1,7 +1,4 @@
 module.exports = async (d) => {
-        name: '$getConfig',
-        type: 'djs',
-        code: async d => {
             const data = d.util.aoiFunc(d);
             if (data.err) return d.client.returnCode(d, data);
 
@@ -18,4 +15,3 @@ module.exports = async (d) => {
                 code: d.util.setCode(data),
             };
         },
-    },
